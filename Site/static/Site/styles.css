@@ -1,0 +1,178 @@
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.nav-link{
+    color: black !important;
+}
+
+.main-body{
+    margin-top: 59.9px !important;
+}
+.bg-grad{
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    height: max-content;
+}
+.contact{
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);color: white;
+}
+.forms{
+    display: grid;grid-template-columns: 40% 60%;padding: 30px;
+}
+
+.two{
+    display: grid;
+    grid-template-columns: repeat(2, .6fr);
+    padding: 30px;
+}
+.two div{
+    padding: 30px;
+}
+.four{
+    display: grid;
+    grid-template-columns: repeat(4,.4fr);
+    width: 95%;
+    margin: 0 auto;
+}
+.three{
+    display: grid;
+    grid-template-columns: repeat(3,.4fr);
+    width: 95%;
+    margin: 60px auto;
+}
+.service-card{
+    border-radius: 5px;
+    width: 95%;
+    height: 230px;
+    padding: 30px;
+    margin: 45px auto;
+   
+    max-width: 400px;
+    top: 30px;
+    color: #000000;
+      border: 2px solid linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(29, 25, 46, .8);
+    padding: -10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+.project-card{
+    border-radius: 5px;
+    width: 95%;
+    height: 350px;
+    /* padding: 30px; */
+    margin: 45px auto;
+    background-color: #524a79;
+    overflow-y: hidden;
+   
+    max-width: 400px;
+    top: 30px;
+    color: #ffffff;
+    border: 2px solid linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+    display: flex;
+    flex-direction: column;
+
+}
+.project-card > div:first-child {
+    height: 40%; /* Adjust width of image container */
+}
+
+.project-card > div:last-child {
+    overflow-y: auto; /* Enable vertical scroll for text content */
+    padding: 10px; /* Add padding to the text content */
+    height: 50%; /* Adjust width of text container */
+}
+.project-card h6{
+    padding: 10px;
+}
+.project-card p{
+    padding: 0 15px;
+}
+.foot{
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.b2{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,.6fr);
+}
+@media (max-width: 1250px) {
+    .service-card{
+        height: 200px;
+    }
+
+
+}
+@media (max-width: 1050px) {
+    .service-card{
+        height: 190px;
+    }
+
+
+}
+@media (max-width: 950px) {
+    .four{
+        display: grid;
+        grid-template-columns: repeat(2,.6fr);
+    }
+    .service-card{
+        height: 200px;
+    }
+    .three{
+        grid-template-columns: repeat(2,.6fr);
+    }
+
+
+}
+@media (max-width: 850px) {
+    .forms{
+        display: inline;
+    }
+    .foot{
+        grid-template-columns: 30% 70%;
+    }
+
+
+}
+@media (max-width: 800px) {
+    .two{
+        display: inline;
+    }
+    .call{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+}
+@media (max-width: 750px) {
+    .foot{
+        display: none;
+    }
+
+
+}
+@media (max-width: 600px) {
+    .three{
+        display: inline;
+    }
+
+
+}

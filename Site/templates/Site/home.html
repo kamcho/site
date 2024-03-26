@@ -1,0 +1,231 @@
+{% extends 'Site/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="cotainer" >
+        
+        
+    <img src="{% static 'Site/Home.png' %}" width="100%"  style="object-fit: cover;"  >
+
+    <br><br>
+    <about>
+        <div>
+            <br><br>
+            <h5 class="text-center">About Crimsons-Analytics</h5>
+            
+            <div class="two">
+                <div>
+                    <img src="{% static 'Site/Home.png' %}" width="100%"  style="object-fit: cover;"  >
+
+                </div>
+                <div style="font-family: Dekk;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Modi earum autem architecto quis nemo veritatis fugit nobis
+                          nostrum delectus ullam rerum illo, iusto nam consequatur placeat
+                           inventore aperiam minus nesciunt?
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Modi earum autem architecto quis nemo veritatis fugit nobis
+                         nostrum delectus ullam rerum illo, iusto nam consequatur placeat
+                          inventore aperiam minus nesciunt?
+                   </p>
+
+                </div>
+            </div>
+        </div>
+    </about>
+
+
+    <services >
+        <div class="bg-grad">
+        <br>
+        <h5 class="text-center" style="color: white;">Our Services</h5>
+
+        <div class="four">
+            <div class="service-card" style="background-color: #ffd3b6;color: #524a79;">
+                <h6 class="text-center">Api Integration</h6>
+                <p>API intergration services that aids your business scale</p>
+
+
+            </div>
+            <div class="service-card" style="background: #fcf8f3;color: #524a79;">
+                <h6 class="text-center">Web Integration</h6>
+                <p>Responsive web development services</p>
+
+            </div>
+            <div class="service-card" style="background: #bbded6;color: #524a79;">
+                <h6 class="text-center">Task Scheduling</h6>
+                <p>Run cron jobs to run periodically automatically.</p>
+
+            </div>
+            <div class="service-card" style="background-color: #524a79;color: white;">
+                <h6 class="text-center">ICT Consultancy</h6>
+                <h6>Ict consultancy services on how to bring your business services online</h6>
+
+            </div>
+          
+        </div>
+    </div>
+    </services>
+
+
+    <projects>
+        <br><br>
+        <h5 class="text-center">Projects</h5>
+        <div class="three text-center">
+            <div class="project-card">
+                <div>
+                  <img src="{% static  'site/Home.png' %}" style="padding: 0px;width: 100%;margin: 0px;">  
+                </div>
+                <br>
+                <div >
+                    <h6>Church</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Ullam laudantium iure soluta, dolor saepe ipsam quasi. Aliquam hic id suscipit.
+                     Quae explicabo officiis adipisci blanditiis impedit quisquam quibusdam animi sapiente.
+                </p>
+                </div>
+                
+            </div>
+            <div class="project-card">
+                <div>
+                  <img src="{% static  'site/Home.png' %}" style="padding: 0px;width: 100%;margin: 0px;">  
+                </div>
+                <br>
+                <div >
+                    <h6>Church</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Ullam laudantium iure soluta, dolor saepe ipsam quasi. Aliquam hic id suscipit.
+                     Quae explicabo officiis adipisci blanditiis impedit quisquam quibusdam animi sapiente.
+                </p>
+                </div>
+                
+            </div>
+            <div class="project-card">
+                <div>
+                  <img src="{% static  'site/Home.png' %}" style="padding: 0px;width: 100%;margin: 0px;">  
+                </div>
+                <br>
+                <div >
+                    <h6>Church</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Ullam laudantium iure soluta, dolor saepe ipsam quasi. Aliquam hic id suscipit.
+                     Quae explicabo officiis adipisci blanditiis impedit quisquam quibusdam animi sapiente.
+                </p>
+                </div>
+                
+            </div>
+
+        </div>
+    </projects>
+
+    <contact>
+        
+        <div class="contact">
+            <br><br>
+        <h5 class="text-center">Contact Us</h5>
+        <br>
+        <div class="forms">
+            <div >
+                <h6 class="call"><i class="bi bi-phone"> </i>+254 742 134 431</h6>
+                <h6 class="call"><i class="bi bi-whatsapp"> </i>+254759870373</h6>
+                <h6 class="call"><i class="bi bi-envelope"> </i>njokevin9@gmail.com</h6>
+                <br>
+                <br ><h6 class="call">Open Hours</h6>
+                <br >
+                <h6 class="call">Monday-Thursday 8:00 AM - 18:00 PM</h6>
+
+                <h6 class="call">Friday 8:00 AM - 16:00 PM</h6>
+                <h6 class="call">SAT-SUN 8:00 AM - 14:00 PM</h6>
+            </div>
+
+            <div style="background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);color: black;">
+                <div class="accordion container" id="changePhoneNumberAccordion" >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="changePhoneNumberHeader">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#changePhoneNumberCollapse" aria-expanded="true" aria-controls="changePhoneNumberCollapse">
+                          <small>Contact-Us</small>
+                        </button>
+                      </h2>
+                      <div id="changePhoneNumberCollapse" class="accordion-collapse" aria-labelledby="changePhoneNumberHeader" data-bs-parent="#changePhoneNumberAccordion">
+                        <div class="accordion-body">
+                          <form method="post" >
+                            {% csrf_token %}
+                            <div class="form-group">
+                              <label for="first-name">Full Name*<small style="color: crimson;">(required)</small></label>
+                              <input  name="names" id="first-name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                           
+                            
+                            <div class="form-group">
+                              <label for="surname">About</label>
+                              <input id="surname"  name="about" class="form-control" placeholder="How do i get a website for my company" required>
+                            </div>
+                            
+                           
+                            
+                            <div class="form-group">
+                              <label for="phone-number">Message*<small style="color: crimson;">(required)</small></label>
+                              <textarea  name="message" class="form-control" rows="6"  required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number">Phone Number<small style="color: crimson;"></small></label>
+                                <input type="text" name="phone-number" class="form-control" id="phone-number" placeholder="0712345678"  required>
+                              </div>
+                              <div class="form-group">
+                                <label for="phone-number">Email<small style="color: crimson;">(required)</small></label>
+                                <input type="text" name="mail" class="form-control" id="phone-number" placeholder="johndoe@gmail.com"  required>
+                              </div>
+                              <br>
+                
+                            <button type="submit" class="btn btn-primary" name="profile">Send</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    </contact>
+
+
+    <footer>
+        <div class="bg-dark foot" >
+            <div>
+                <h5>Crimsons Analytics</h5>
+            </div>
+            <div class="b2">
+                <div>
+                    
+                    <ul>
+                        <li><h6>Contact Us</h6></li>
+                        <br>
+                        <li><h6><i class="bi bi-phone"> </i>+254742134431</h6></li>
+                        <li><h6><i class="bi bi-whatsapp"> </i>+254759870373</h6></li>
+                        <li><h6><i class="bi bi-envelope"> </i>njokevin9@gmail.com</h6></li>
+                    </ul>
+                </div>
+                <div>
+                    
+                    <ul>
+                        <li><h6>Working Hours</h6></li>
+                        <br>
+                        <li><h6>Mon-Thur 8:00 AM - 18:00 PM</h6></li>
+                        <li><h6>Friday 8:00 AM - 16:00 PM</h6></li>
+                        <li><h6>Sat-Sun 8:00 AM - 14:00PM </h6></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            
+
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}
